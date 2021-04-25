@@ -2,18 +2,6 @@
   font-family: 'DM Sans', sans-serif;
   box-sizing: border-box;
 }
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background-color: #DDC5FF;
-  padding: .75rem;
-  font-size: 18px;
-  z-index: 2;
-}
 
 .navView {
   display: block;
@@ -36,7 +24,7 @@ nav {
   border-left: .6rem solid #6200EE;
 }
 
-.card {
+.cardInfo {
   border: 4px solid black;
   border-radius: 5px;
   width: 220px;
@@ -45,11 +33,11 @@ nav {
   position: relative;
 }
 
-.card:hover {
+.cardInfo:hover {
   border: 4px solid #E40000;
 }
 
-.card-title {
+.cardInfo > .card-title {
   font-size: 20px;
 }
 
