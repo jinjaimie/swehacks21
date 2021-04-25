@@ -47,3 +47,36 @@ img {
   height: 200px;
   width: auto;
 }
+
+.button-divs {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 40px 40px 0 40px;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 40px 30px;
+  border-radius: 4px;
+}
+
+h1 {
+  margin: 100px 50px 40px 50px;
+}
+
+.desc {
+  margin: 0 50px;
+}
+
+.detail-img {
+  border: 4px solid black;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

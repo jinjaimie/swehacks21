@@ -10,13 +10,14 @@ export function Details(props) {
   return (
     <div>
       <h1>{name}</h1>
-      <img src={img}></img>
-      <p>{desc}</p>
+      <img className="detail-img" src={img}></img>
+      <p className="desc">{desc}</p>
+      <hr/>
       <Btn name='Learn about the movement' />
-      <Btn name='Find Resources' />
+      <Btn name='Find resources' />
       <Btn name='How to get involved' />
       <Btn name='Opportunities in Seattle' />
-      <Btn name='Current News' />
+      <Btn name='Current news' />
       <Btn name='Stories' />
     </div>
   )
