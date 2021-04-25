@@ -1,7 +1,8 @@
 import './index.css';
 import React, { useState } from 'react';
 import {Switch, Redirect, Route} from 'react-router-dom';
-import CardInfo from './Card.js'
+import {CardInfo} from './Card';
+import CardDeck from 'react-bootstrap/CardDeck'
 
 const FAKE_DATA = [
   {
@@ -17,8 +18,7 @@ const FAKE_DATA = [
 ]
 
 function App() {
-  const [data, setData] = useState([])
-  setData(FAKE_DATA)
+  const [data, setData] = useState(FAKE_DATA)
   return (
     <div>
       <header>
@@ -26,10 +26,10 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/choices"></Route>
+          <Route path="/choices"><Choices /></Route>
           <Route path="/dashboard"><Dashboard data={data} /></Route>
-          <Route path="/login"></Route>
-          <Route path="/settings"></Route>
+          <Route path="/login"><Login /></Route>
+          <Route path="/settings"><Settings /></Route>
           <Redirect to="/dashboard" />
         </Switch>
       </main>
@@ -39,12 +39,12 @@ function App() {
 
 function Dashboard(props) {
   let cardData = props.data.map( data => {
-    return <CardInfo url={data.url} name={data.name} image={data.image}></CardInfo>
+    return <CardInfo key={data.url} url={data.url} name={data.name} image={data.image}></CardInfo>
   })
   return (
-    <div>
+    <CardDeck>
       {cardData}
-    </div>
+    </CardDeck>
   )
 }
 

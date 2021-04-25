@@ -1,9 +1,11 @@
-import Card from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
+import React from 'react';
 
-function CardInfo(props) {
-    let img = props.image
+export function CardInfo(props) {
+    let img = "img/" + props.image
     let name = props.name
     let url = props.url
+    console.log(img)
     return (
     <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={img} />
