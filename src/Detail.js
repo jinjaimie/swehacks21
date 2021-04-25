@@ -6,6 +6,7 @@ export function Details(props) {
   let img = "img/" + props.image;
   let url = props.url;
   let desc = props.description;
+  console.log(img)
   return (
     <div>
       <h1>{name}</h1>
@@ -24,7 +25,7 @@ export function Details(props) {
 function Btn(props) {
   let name = props.name;
   return (
-    <div>
+    <div className='button-divs'>
       <h2>{name}</h2>
     </div>
   )
