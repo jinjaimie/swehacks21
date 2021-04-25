@@ -1,11 +1,10 @@
 import './index.css';
-import React, { useState } from 'react';
+import React from 'react';
 import {Switch, Redirect, Route, NavLink} from 'react-router-dom';
 import { useParams } from 'react-router';
 import {CardInfo} from './Card';
 import {Details} from './Detail';
 import CardDeck from 'react-bootstrap/CardDeck';
-import choiceOptions from './choices.json';
 
 const FAKE_DATA = [
   {
@@ -59,8 +58,8 @@ const FAKE_DATA = [
 ]
 
 function App() {
-  const [data, setData] = useState(FAKE_DATA) // the user's personal interests
-  const [choices, setChoices] = useState(choiceOptions) // all available options
+  const data = FAKE_DATA // the user's personal interests
+  //const [choices, setChoices] = useState(choiceOptions) // all available options
   return (
     <div>
       <header>
@@ -95,9 +94,8 @@ function MoreInfo(props) {
   const currChoice = params.choice;
   let data = props.data.filter(data => data.url === currChoice)
   data = data[0]
-  console.log(data.image)
   return (
-    <Details name={data.name} image={"img/" + data.image} description={data.description} data={data.data}/>
+    <Details name={data.name} image={data.image} description={data.description} data={data.data}/>
   )
 }
 
@@ -112,20 +110,20 @@ function Dashboard(props) {
   )
 }
 
-function Login() {
-  return (
-    <div>
+// function Login() {
+//   return (
+//     <div>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-function Settings() {
-  return (
-    <div>
+// function Settings() {
+//   return (
+//     <div>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
 export default App;

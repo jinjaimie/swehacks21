@@ -7,6 +7,7 @@ export function Details(props) {
   console.log(props)
   let name = props.name;
   let desc = props.description;
+  let img = "../img/" + props.image;
   let data = props.data.map(d => {
     return(
       <Card key={d.id}>
@@ -21,21 +22,12 @@ export function Details(props) {
   return (
     <div>
       <h1>{name}</h1>
-      <img className="detail-img" src={props.image} alt={name} />
+      <img className="detail-img" src={img} alt={name} />
       <p className="desc">{desc}</p>
       <hr/>
       <Accordion>
         {data}
       </Accordion>
-    </div>
-  )
-}
-
-function Btn(props) {
-  let name = props.name;
-  return (
-    <div className='button-divs'>
-      <h2>{name}</h2>
     </div>
   )
 }
