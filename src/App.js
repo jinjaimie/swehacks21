@@ -48,7 +48,7 @@ function App() {
 function MoreInfo(props) {
   const params = useParams();
   const currChoice = params.choice;
-  props.data.filter(data => data.url = currChoice)
+  const currData = props.data.filter(data => data.url = currChoice)
   return (
     <div></div>
   )
