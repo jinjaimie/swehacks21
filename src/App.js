@@ -1,6 +1,6 @@
 import './index.css';
 import React, { useState } from 'react';
-import {Switch, Redirect, Route} from 'react-router-dom';
+import {Switch, Redirect, Route, NavLink} from 'react-router-dom';
 import { useParams } from 'react-router';
 import {CardInfo} from './Card';
 import {Details} from './Detail';
@@ -28,16 +28,22 @@ function App() {
   return (
     <div>
       <header>
-
+        <nav>
+          <div className="links flex-container">
+              <div><div id="title">Activate!</div></div>
+              <NavLink exact to="/" activeClassName="activeClass">Dashboard</NavLink>
+          </div>
+        </nav>
       </header>
       <main>
         <Switch>
-          <Route exact path="/choices"><Dashboard data={choices} /></Route>
-          <Route path="/choices/:choice"><MoreInfo data={choices}/></Route>
-          <Route path="/dashboard"><Dashboard data={data} /></Route>
-          <Route path="/login"><Login /></Route>
-          <Route path="/settings"><Settings /></Route>
-          <Redirect to="/dashboard" />
+          {//<Route exact path="/choices"><Dashboard data={choices} /></Route>
+          //<Route path="/login"><Login /></Route>
+          //<Route path="/settings"><Settings /></Route>
+          }
+          <Route path="/choices/:choice"><MoreInfo data={data}/></Route>
+          <Route exact path="/"><Dashboard data={choices} /></Route>
+          <Redirect to="/" />
         </Switch>
       </main>
       <footer>
