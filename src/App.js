@@ -5,6 +5,7 @@ import { useParams } from 'react-router';
 import {CardInfo} from './Card';
 import CardDeck from 'react-bootstrap/CardDeck'
 import choiceOptions from './choices.json'
+import Accordion from 'react-bootstrap/Accordion'
 
 const FAKE_DATA = [
   {
@@ -26,7 +27,7 @@ function App() {
   return (
     <div>
       <header>
-
+        <h1>Activate!</h1>
       </header>
       <main>
         <Switch>
@@ -49,8 +50,22 @@ function MoreInfo(props) {
   const params = useParams();
   const currChoice = params.choice;
   const currData = props.data.filter(data => data.url = currChoice)
+
   return (
-    <div></div>
+    <div>
+      <Accordion>
+        <Card>
+          <Card.Header>
+            <Accordion.Toggle as={Button} variant="link" eventKey="1">
+              Click me!
+            </Accordion.Toggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="1">
+            <Card.Body>Hello! I'm another body</Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
+    </div>
   )
 }
 
