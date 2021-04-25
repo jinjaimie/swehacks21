@@ -30,10 +30,10 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/choices/:choice"><MoreInfo data={data}/></Route>
           <Route path="/dashboard"><Dashboard data={choices} /></Route>
           <Route path="/login"><Login /></Route>
           <Route path="/settings"><Settings /></Route>
+          <Route path="/:choice"><MoreInfo data={data}/></Route>
           <Redirect to="/dashboard" />
         </Switch>
       </main>
@@ -49,6 +49,9 @@ function MoreInfo(props) {
   const params = useParams();
   const currChoice = params.choice;
   props.data.filter(data => data.url = currChoice)
+  return (
+    <div></div>
+  )
 }
 
 function Dashboard(props) {

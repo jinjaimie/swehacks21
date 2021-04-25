@@ -6,7 +6,6 @@ export function CardInfo(props) {
     let img = "img/" + props.image;
     let name = props.name
     let url = props.url
-    console.log(img)
     return (
         <NavLink to={"/choices/" + url}>
             <Card style={{ width: '18rem' }}>
