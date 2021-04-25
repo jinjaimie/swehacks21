@@ -10,7 +10,7 @@ export function Details(props) {
   let img = "../img/" + props.image;
   let data = props.data.map(d => {
     return(
-      <Card key={d.id}>
+      <Card key={d.id} className="button-card">
       <Accordion.Toggle as={Card.Header} eventKey={d.id}>
         {d.title}
       </Accordion.Toggle>
@@ -18,7 +18,7 @@ export function Details(props) {
         <Card.Body>{d.info}</Card.Body>
       </Accordion.Collapse>
     </Card>)
-  }) 
+  })
   return (
     <div>
       <h1>{name}</h1>
