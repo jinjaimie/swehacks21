@@ -1,5 +1,6 @@
 import {Card} from 'react-bootstrap';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export function CardInfo(props) {
     let img = "img/" + props.image;
@@ -7,12 +8,13 @@ export function CardInfo(props) {
     let url = props.url
     console.log(img)
     return (
-    <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={img} />
-        <Card.Body>
-            <a href = {url} className='stretched-link'></a>
-            <Card.Title>{name}</Card.Title>
-        </Card.Body>
-    </Card>
+        <NavLink to={"/choices/" + props.url}>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={img} />
+                <Card.Body>
+                    <Card.Title>{name}</Card.Title>
+                </Card.Body>
+            </Card>
+        </NavLink>
     );
 }

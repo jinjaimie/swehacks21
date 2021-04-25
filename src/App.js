@@ -1,6 +1,7 @@
 import './index.css';
 import React, { useState } from 'react';
 import {Switch, Redirect, Route} from 'react-router-dom';
+import { useParams } from 'react-router';
 import {CardInfo} from './Card';
 import CardDeck from 'react-bootstrap/CardDeck'
 
@@ -8,7 +9,8 @@ const FAKE_DATA = [
   {
     url: "black-lives-matter",
     name: "Black Lives Matter",
-    image: "blm.jpg"
+    image: "blm.jpg",
+    description: "",
   },
   {
     url: "stop-asian-hate",
@@ -21,7 +23,7 @@ const FAKE_CHOICES = [
   {
     url: "black-lives-matter",
     name: "Black Lives Matter",
-    image: "blm.jpg"
+    image: ""
   },
   {
     url: "stop-asian-hate",
@@ -51,7 +53,8 @@ const FAKE_CHOICES = [
 ]
 
 function App() {
-  const [data, setData] = useState([])
+  const [data, setData] = useState(FAKE_DATA)
+  const [choices, setChoices] = useState(FAKE_CHOICES)
   return (
     <div>
       <header>
@@ -59,8 +62,8 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/choices"><Dashboard data={FAKE_CHOICES}/></Route>
-          <Route path="/dashboard"><Dashboard data={FAKE_DATA} /></Route>
+          <Route path="/choices/:choice"><MoreInfo data={data}/></Route>
+          <Route path="/dashboard"><Dashboard data={choices} /></Route>
           <Route path="/login"><Login /></Route>
           <Route path="/settings"><Settings /></Route>
           <Redirect to="/dashboard" />
@@ -68,6 +71,12 @@ function App() {
       </main>
     </div>
   );
+}
+
+function MoreInfo(props) {
+  const params = useParams();
+  const currChoice = params.choice;
+  props.data.filter(data => data.url = currChoice)
 }
 
 function Dashboard(props) {
