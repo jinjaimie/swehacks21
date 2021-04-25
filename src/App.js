@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import {Switch, Redirect, Route} from 'react-router-dom';
 import {CardInfo} from './Card';
 import CardDeck from 'react-bootstrap/CardDeck'
+import choiceOptions from './choices.json'
 
 const FAKE_DATA = [
   {
@@ -17,39 +18,6 @@ const FAKE_DATA = [
   }
 ]
 
-const FAKE_CHOICES = [
-  {
-    url: "black-lives-matter",
-    name: "Black Lives Matter",
-    image: "blm.jpg"
-  },
-  {
-    url: "stop-asian-hate",
-    name: "Stop Asian Hate",
-    image: "sah.jpg"
-  },
-  {
-    url: "fridays-for-future",
-    name: "Fridays for Future",
-    image: "fff.jpg"
-  },
-  {
-    url: "animal-rights",
-    name: "Animal Rights",
-    image: "ar.jpg"
-  },
-  {
-    url: "net-neutrality",
-    name: "Net Neutrality",
-    image: "nn.jpg"
-  },
-  {
-    url: "womens-rights",
-    name: "Women's Rights",
-    image: "wr.jpg"
-  }
-]
-
 function App() {
   const [data, setData] = useState([])
   return (
@@ -59,7 +27,7 @@ function App() {
       </header>
       <main>
         <Switch>
-          <Route path="/choices"><Dashboard data={FAKE_CHOICES}/></Route>
+          <Route path="/choices"><Dashboard data={choiceOptions}/></Route>
           <Route path="/dashboard"><Dashboard data={FAKE_DATA} /></Route>
           <Route path="/login"><Login /></Route>
           <Route path="/settings"><Settings /></Route>

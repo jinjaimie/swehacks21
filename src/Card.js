@@ -10,7 +10,7 @@ export function CardInfo(props) {
     <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-            <a href = {url} className='stretched-link'></a>
+            <a href={url} className='stretched-link'></a>
             <Card.Title>{name}</Card.Title>
         </Card.Body>
     </Card>
