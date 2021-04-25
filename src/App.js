@@ -57,7 +57,6 @@ function Dashboard(props) {
   })
   return (
     <CardDeck>
-      <img src="img/fff.png" alt="animal"/>
       {cardData}
     </CardDeck>
   )

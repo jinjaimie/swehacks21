@@ -9,9 +9,8 @@ export function CardInfo(props) {
     console.log(img)
     return (
         <NavLink to={"/choices/" + url}>
-            <img src={img}/>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('./img/blm.jpg')} />
+                <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                 </Card.Body>
