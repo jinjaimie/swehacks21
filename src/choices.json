@@ -1,0 +1,32 @@
+[
+  {
+    "url": "black-lives-matter",
+    "name": "Black Lives Matter",
+    "image": "blm.jpg"
+  },
+  {
+    "url": "stop-asian-hate",
+    "name": "Stop Asian Hate",
+    "image": "sah.jpg"
+  },
+  {
+    "url": "fridays-for-future",
+    "name": "Fridays for Future",
+    "image": "fff.jpg"
+  },
+  {
+    "url": "animal-rights",
+    "name": "Animal Rights",
+    "image": "ar.jpg"
+  },
+  {
+    "url": "net-neutrality",
+    "name": "Net Neutrality",
+    "image": "nn.jpg"
+  },
+  {
+    "url": "womens-rights",
+    "name": "Women's Rights",
+    "image": "wr.jpg"
+  }
+]

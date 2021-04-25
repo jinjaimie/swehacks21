@@ -4,6 +4,7 @@ import {Switch, Redirect, Route} from 'react-router-dom';
 import { useParams } from 'react-router';
 import {CardInfo} from './Card';
 import CardDeck from 'react-bootstrap/CardDeck'
+import choiceOptions from './choices.json'
 
 const FAKE_DATA = [
   {
@@ -19,42 +20,9 @@ const FAKE_DATA = [
   }
 ]
 
-const FAKE_CHOICES = [
-  {
-    url: "black-lives-matter",
-    name: "Black Lives Matter",
-    image: ""
-  },
-  {
-    url: "stop-asian-hate",
-    name: "Stop Asian Hate",
-    image: "sah.jpg"
-  },
-  {
-    url: "fridays-for-future",
-    name: "Fridays for Future",
-    image: "fff.jpg"
-  },
-  {
-    url: "animal-rights",
-    name: "Animal Rights",
-    image: "ar.jpg"
-  },
-  {
-    url: "net-neutrality",
-    name: "Net Neutrality",
-    image: "nn.jpg"
-  },
-  {
-    url: "womens-rights",
-    name: "Women's Rights",
-    image: "wr.jpg"
-  }
-]
-
 function App() {
   const [data, setData] = useState(FAKE_DATA)
-  const [choices, setChoices] = useState(FAKE_CHOICES)
+  const [choices, setChoices] = useState(choiceOptions)
   return (
     <div>
       <header>
