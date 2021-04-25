@@ -1,4 +1,4 @@
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ export function CardInfo(props) {
     let url = props.url
     return (
         <NavLink to={"/choices/" + url}>
-            <Card style={{ width: '18rem' }}>
+            <Card className="cardInfo">
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
