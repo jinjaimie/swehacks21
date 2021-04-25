@@ -2,31 +2,37 @@
   {
     "url": "black-lives-matter",
     "name": "Black Lives Matter",
-    "image": "blm.jpg"
+    "image": "blm.jpg",
+    "description": "#BlackLivesMatter was founded in 2013 in response to the acquittal of Trayvon Martin’s murderer. Black Lives Matter Global Network Foundation, Inc. is a global organization in the US, UK, and Canada, whose mission is to eradicate white supremacy and build local power to intervene in violence inflicted on Black communities by the state and vigilantes. By combating and countering acts of violence, creating space for Black imagination and innovation, and centering Black joy, we are winning immediate improvements in our lives."
   },
   {
     "url": "stop-asian-hate",
     "name": "Stop Asian Hate",
-    "image": "sah.jpg"
+    "image": "sah.jpg",
+    "description": "In response to the alarming escalation in xenophobia and bigotry resulting from the COVID-19 pandemic, the Asian Pacific Planning and Policy Council (A3PCON), Chinese for Affirmative Action (CAA), and the Asian American Studies Department of San Francisco State University launched the Stop AAPI Hate reporting center on March 19, 2020. The center tracks and responds to incidents of hate, violence, harassment, discrimination, shunning, and child bullying against Asian Americans and Pacific Islanders in the United States."
   },
   {
     "url": "fridays-for-future",
     "name": "Fridays for Future",
-    "image": "fff.jpg"
+    "image": "fff.jpg",
+    "description": "Fridays for Future or FFF, is a global climate strike movement that started in August 2018, when 15-year-old Greta Thunberg began a school strike for climate. In the three weeks leading up to the Swedish election, she sat outside Swedish Parliament every school day, demanding urgent action on the climate crisis. She was tired of society’s unwillingness to see the climate crisis for what it is: a crisis."
   },
   {
     "url": "animal-rights",
-    "name": "Animal Rights",
-    "image": "ar.jpg"
+    "name": "Farm Animal Rights Movement",
+    "image": "ar.jpg",
+    "description": "Farm Animal Rights Movement (FARM) is a national nonprofit organization advocating for animal rights and veganism since 1976. For many years, we were the only national animal rights organization fighting for farmed animals."
   },
   {
     "url": "net-neutrality",
     "name": "Net Neutrality",
-    "image": "nn.jpg"
+    "image": "nn.jpg",
+    "description": "Net Neutrality is the basic principle that prohibits internet service providers like AT&T, Comcast and Verizon from speeding up, slowing down or blocking any content, applications or websites you want to use. Net Neutrality is the way the internet has always worked. When left to their own devices, these companies have violated people’s basic online rights."
   },
   {
     "url": "womens-rights",
     "name": "Women's Rights",
-    "image": "wr.jpg"
+    "image": "wr.jpg",
+    "description": "The mission of Women’s March is to harness the political power of diverse women and their communities to create transformative social change. Women’s March is a women-led movement providing intersectional education on a diverse range of issues and creating entry points for new grassroots activists & organizers to engage in their local communities through trainings, outreach programs and events. Women’s March is committed to dismantling systems of oppression through nonviolent resistance and building inclusive structures guided by self-determination, dignity and respect."
   }
 ]
