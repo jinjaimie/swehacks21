@@ -1,5 +1,5 @@
 import './index.css';
-import React from 'react';
+import React, { useState } from 'react';
 import {Switch, Redirect, Route} from 'react-router-dom';
 import CardInfo from './Card.js'
 
@@ -17,6 +17,8 @@ const FAKE_DATA = [
 ]
 
 function App() {
+  const [data, setData] = useState([])
+  setData(FAKE_DATA)
   return (
     <div>
       <header>
@@ -25,7 +27,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/choices"></Route>
-          <Route path="/dashboard"><Dashboard /></Route>
+          <Route path="/dashboard"><Dashboard data={data} /></Route>
           <Route path="/login"></Route>
           <Route path="/settings"></Route>
           <Redirect to="/dashboard" />
@@ -35,8 +37,8 @@ function App() {
   );
 }
 
-function Dashboard() {
-  let cardData = FAKE_DATA.map( data => {
+function Dashboard(props) {
+  let cardData = props.data.map( data => {
     return <CardInfo url={data.url} name={data.name} image={data.image}></CardInfo>
   })
   return (
