@@ -12,21 +12,21 @@
   {
     "url": "fridays-for-future",
     "name": "Fridays for Future",
-    "image": "fff.jpg"
+    "image": "fff.png"
   },
   {
     "url": "animal-rights",
     "name": "Animal Rights",
-    "image": "ar.jpg"
+    "image": "ar.jpeg"
   },
   {
     "url": "net-neutrality",
     "name": "Net Neutrality",
-    "image": "nn.jpg"
+    "image": "nn.jpeg"
   },
   {
     "url": "womens-rights",
     "name": "Women's Rights",
-    "image": "wr.jpg"
+    "image": "wm.jpeg"
   }
 ]
