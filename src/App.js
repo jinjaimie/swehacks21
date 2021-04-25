@@ -40,6 +40,10 @@ function App() {
           <Redirect to="/dashboard" />
         </Switch>
       </main>
+      <footer>
+      <p>by Jaimie Jin, Isabella Heppe</p>
+        <p>Copyright &copy; 2021</p>
+      </footer>
     </div>
   );
 }

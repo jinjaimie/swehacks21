@@ -43,3 +43,7 @@ a:hover {
   color: #E40000;
   text-decoration: none;
 }
+img {
+  height: 200px;
+  width: auto;
+}

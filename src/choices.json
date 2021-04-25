@@ -14,25 +14,25 @@
   {
     "url": "fridays-for-future",
     "name": "Fridays for Future",
-    "image": "fff.jpg",
+    "image": "fff.png",
     "description": "Fridays for Future or FFF, is a global climate strike movement that started in August 2018, when 15-year-old Greta Thunberg began a school strike for climate. In the three weeks leading up to the Swedish election, she sat outside Swedish Parliament every school day, demanding urgent action on the climate crisis. She was tired of society’s unwillingness to see the climate crisis for what it is: a crisis."
   },
   {
     "url": "animal-rights",
     "name": "Farm Animal Rights Movement",
-    "image": "ar.jpg",
+    "image": "ar.jpeg",
     "description": "Farm Animal Rights Movement (FARM) is a national nonprofit organization advocating for animal rights and veganism since 1976. For many years, we were the only national animal rights organization fighting for farmed animals."
   },
   {
     "url": "net-neutrality",
     "name": "Net Neutrality",
-    "image": "nn.jpg",
+    "image": "nn.jpeg",
     "description": "Net Neutrality is the basic principle that prohibits internet service providers like AT&T, Comcast and Verizon from speeding up, slowing down or blocking any content, applications or websites you want to use. Net Neutrality is the way the internet has always worked. When left to their own devices, these companies have violated people’s basic online rights."
   },
   {
     "url": "womens-rights",
     "name": "Women's Rights",
-    "image": "wr.jpg",
+    "image": "wm.jpeg",
     "description": "The mission of Women’s March is to harness the political power of diverse women and their communities to create transformative social change. Women’s March is a women-led movement providing intersectional education on a diverse range of issues and creating entry points for new grassroots activists & organizers to engage in their local communities through trainings, outreach programs and events. Women’s March is committed to dismantling systems of oppression through nonviolent resistance and building inclusive structures guided by self-determination, dignity and respect."
   }
 ]
