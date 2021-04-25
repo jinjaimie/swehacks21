@@ -1,6 +1,7 @@
 import './index.css';
 import React from 'react';
 import {Switch, Redirect, Route} from 'react-router-dom';
+import CardInfo from './Card.js'
 
 const FAKE_DATA = [
   {
@@ -24,7 +25,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/choices"></Route>
-          <Route path="/dashboard"></Route>
+          <Route path="/dashboard"><Dashboard /></Route>
           <Route path="/login"></Route>
           <Route path="/settings"></Route>
           <Redirect to="/dashboard" />
@@ -35,20 +36,12 @@ function App() {
 }
 
 function Dashboard() {
+  let cardData = FAKE_DATA.map( data => {
+    return <CardInfo url={data.url} name={data.name} image={data.image}></CardInfo>
+  })
   return (
     <div>
-
-    </div>
-  )
-}
-
-function Card(props) {
-  let img = props.image
-  let name = props.name
-  let url = props.url
-  return (
-    <div>
-
+      {cardData}
     </div>
   )
 }

@@ -1,13 +1,16 @@
 import Card from 'react-bootstrap';
 
 function CardInfo(props) {
- return (
+    let img = props.image
+    let name = props.name
+    let url = props.url
+    return (
     <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Img variant="top" src={img} />
         <Card.Body>
-            <Card.Title>prop.title</Card.Title>
-            <Card.Text>prop.text</Card.Text>
+            <Card.Title>{name}</Card.Title>
+            <Card.Text>{url}</Card.Text>
         </Card.Body>
     </Card>
- );
+    );
 }
